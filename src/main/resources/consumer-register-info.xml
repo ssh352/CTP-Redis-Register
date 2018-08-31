@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--1级标签-->
+<redis>
+    <!--2级标签-->
+    <Consumer name="9970110000X" descirption="产品定价" flag="on">
+        <!--想要获取的信息-->
+        <sysName>9970110000X</sysName>
+        <agentName>CAgentLC</agentName>
+        <address>amqp://ctp:guest@20.200.31.67/ctp?queues=CAGENTLC</address>
+        <address1>exchange=amq.direct</address1>
+    </Consumer>
+    <Consumer name="9946000000X" descirption="公司信贷API" flag="on">
+        <!--想要获取的信息-->
+        <sysName>9946000000X</sysName>
+        <agentName>CAgentLC</agentName>
+        <address>amqp://ctp:guest@20.200.31.67/ctp?queues=CAGENTLC</address>
+        <address1>exchange=amq.direct</address1>
+    </Consumer>
+    <Consumer name="9900000000X" descirption="内评" flag="on">
+        <!--想要获取的信息-->
+        <sysName>9900000000X</sysName>
+        <agentName>CAgentLC</agentName>
+        <address>amqp://ctp:guest@20.200.31.67/ctp?queues=CAGENTLC</address>
+        <address1>exchange=amq.direct</address1>
+    </Consumer>
+    <Consumer name="PIP" descirption="流程整合平台" flag="on">
+        <!--想要获取的信息-->
+        <sysName>PIP</sysName>
+        <agentName>CAgentLC</agentName>
+        <address>amqp://ctp:guest@20.200.31.67/ctp?queues=CAGENTLC</address>
+        <address1>exchange=amq.direct</address1>
+    </Consumer>
+    <Consumer name="9970119000X" descirption="网贷" flag="on">
+        <!--想要获取的信息-->
+        <sysName>9970119000X</sysName>
+        <agentName>CAgentLC</agentName>
+        <address>amqp://ctp:guest@20.200.31.67/ctp?queues=CAGENTLC</address>
+        <address1>exchange=amq.direct</address1>
+    </Consumer>
+    <Consumer name="9970116000X" descirption="资产保全" flag="on">
+        <!--想要获取的信息-->
+        <sysName>9970116000X</sysName>
+        <agentName>CAgentLC</agentName>
+        <address>amqp://ctp:guest@20.200.31.67/ctp?queues=CAGENTLC</address>
+        <address1>exchange=amq.direct</address1>
+    </Consumer>
+</redis>

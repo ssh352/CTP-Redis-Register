@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--1级标签-->
+<redis>
+    <!--2级标签-->
+    <Consumer name="PIP" descirption="流程整合平台" flag="off">
+            <!--想要获取的信息-->
+            <sysName>yx</sysName>
+            <agentName>PAgentLC</agentName>
+            <address>amqp://ctp:guest@20.200.21.78/ctp?queues=CPDJ_QUEUE</address>
+	    <address1>exchange=amq.direct</address1>
+    </Consumer>
+    <Provider name="PIP-1" descirption="流程整合平台---1" flag="on">
+            <!--想要获取的信息-->
+            <sysName>yx</sysName>
+            <agentName>PAgentLC</agentName>
+            <Protocol>amqp</Protocol>
+            <address>amqp://ctp:guest@20.200.21.78/ctp?queues=CPDJ_QUEUE</address>
+	    <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Consumer name="PIP" descirption="流程整合平台" flag="on">
+        <!--想要获取的信息-->
+        <sysName>yx</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=CPDJ_QUEUE</address>
+        <address1>exchange=amq.direct</address1>
+    </Consumer>
+</redis>

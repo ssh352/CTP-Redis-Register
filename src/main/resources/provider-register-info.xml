@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--1级标签-->
+<redis>
+    <!--2级标签-->
+    <Provider name="9970zp00000" descirption="中间业务系统-socket" flag="on">
+        <!--想要获取的信息-->
+        <sysName>9970zp00000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>tcp-short</Protocol>
+        <address>tcp-short://20.200.7.137:56666</address>
+    </Provider>
+    <Provider name="99700220000" descirption="征信系统-socket" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99700220000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>tcp-short</Protocol>
+        <address>tcp-short://20.200.7.137:56666</address>
+    </Provider>
+    <Provider name="99370000000" descirption="理财-socket" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99370000000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>tcp-short</Protocol>
+        <address>tcp-short://20.200.22.108:34071</address>
+    </Provider>
+    <Provider name="99701100000" descirption="产品定价-api" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99701100000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=CPDJ_QUEUE</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Provider name="99460000000" descirption="公司信贷-api" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99460000000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=GSXDAPIQUEUE</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Provider name="99460000010" descirption="公司信贷-Tuxedo" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99460000010</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=GSXDRECV_QUEUE</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Provider name="99000000000" descirption="内评-API" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99000000000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=NPAPIQUEUE</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Provider name="99470000000" descirption="商业票据-socket" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99470000000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=billQueue</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Provider name="99350000000" descirption="国际业务-tuxedo" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99350000000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=GSXDRECV_QUEUE</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Provider name="99420000000" descirption="客户信息平台-tuxedo" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99420000000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=CADRECV_CUSTOMERRECV</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <!--SpringCloud方式接入bgn-->
+    <Provider name="guaranty" descirption="担保-SpringCloud" flag="on">
+        <!--想要获取的信息-->
+        <sysName>guaranty</sysName>
+        <agentName>PAgentLC</agentName>
+        <address>http://guaranty</address>
+    </Provider>
+    <Provider name="PIPCTL" descirption="流程整合平台-SpringCloud" flag="on">
+        <!--想要获取的信息-->
+        <sysName>PIPCTL</sysName>
+        <agentName>PAgentLC</agentName>
+        <address>http://PIPCTL</address>
+    </Provider>
+    <Provider name="ZJDEMO" descirption="资金业务系统-SpringCloud" flag="on">
+        <!--想要获取的信息-->
+        <sysName>ZJDEMO</sysName>
+        <agentName>PAgentLC</agentName>
+        <address>http://ZJDEMO</address>
+    </Provider>
+    <!--SpringCloud接入 end！-->
+    <Provider name="99420000000" descirption="电子印章-tuxedo" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99420000000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=GSXDRECV_QUEUE</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Provider name="99701190000" descirption="网贷-api" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99701190000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=WDPTQUEUE</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Provider name="99701030000" descirption="联网核查-tuxedo" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99701030000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=GSXDRECV_QUEUE</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Provider name="99701160000" descirption="资产保全-API" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99701160000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=ZCBQ_QUEUE</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Provider name="99700020001" descirption="资金清算-tuxedo" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99700020001</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=CADRECV_ZJQSPARECV</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+    <Provider name="99700010000" descirption="逻辑集中-tuxedo" flag="on">
+        <!--想要获取的信息-->
+        <sysName>99700010000</sysName>
+        <agentName>PAgentLC</agentName>
+        <Protocol>amqp</Protocol>
+        <address>amqp://ctp:guest@20.200.21.78/ctp?queues=RMQRECVFMLDEAL</address>
+        <address1>exchange=amq.direct</address1>
+    </Provider>
+</redis>
